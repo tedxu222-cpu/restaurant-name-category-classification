@@ -1,0 +1,22 @@
+# 原始数据与处理过程数据：体积大，且包含原始评论，不上传至 GitHub
+data/raw/
+data/derived/
+data/splits/
+
+# 仅提交最终交付数据
+data/final/*
+!data/final/restaurants_final.csv
+
+# 仅提交可复核的小型摘要与补名证据；模型输入、评论样本等保留在本地
+outputs/name_completion/*
+!outputs/name_completion/name_completion_fill_evidence.csv
+!outputs/name_completion/name_completion_selected_candidates.csv
+outputs/category/*
+!outputs/category/restaurant_category_summary.csv
+
+# API 密钥、运行缓存和编辑器临时文件
+api-key.txt
+*.pkl
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
