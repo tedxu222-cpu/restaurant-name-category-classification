@@ -45,7 +45,7 @@
 3. `notebooks/restaurants_category_classification.ipynb`：根据名称和评论执行关键词规则分类。
 4. `notebooks/llm_category_classification.ipynb`：可选。使用 DeepSeek 对规则分类为“不确定”的商家进行复核，并生成最终文件。
 
-两个大语言模型 Notebook 均需要自行提供有效的 DeepSeek API Key；密钥只在当前 Notebook 会话中输入，不应保存到项目文件。当前项目已导出两份模型结果：
+两个大语言模型 Notebook 均需要自行提供有效的 DeepSeek API Key；密钥只在当前 Notebook 会话中输入，不应保存到项目文件。两份模型结果已在本地导出，但因包含评论文本，未上传至公开仓库：
 
 - `outputs/name_completion/name_two_vote_llm_screened.csv`
 - `outputs/category/category_llm_screened.csv`
@@ -60,7 +60,7 @@
 | `data/raw/ratings.csv` | 原始评分与评论表 |
 | `data/final/restaurants_final.csv` | 最终补名并完成类别分类的店家表 |
 | `outputs/name_completion/name_completion_fill_evidence.csv` | 每个补名结果的候选与票数证据 |
-| `outputs/category/category_llm_screened.csv` | 大语言模型类别复核结果 |
+| `outputs/category/category_llm_screened.csv` | 大语言模型类别复核结果（仅本地保留） |
 | `report/店家数据补全与类别分类实验报告.docx` | 实验报告 |
 
 ## 注意事项
